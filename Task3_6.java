@@ -23,18 +23,17 @@ public class Task3_6 {
                 a = 1;
             else {
                 if ((year % 100 != 0) & (year % 4 != 0))
-					a = 2;
-				else
-					a = 1;
-			}
-		}
-		System.out.print("Year/год: " + year);
-		switch (a) {
-		case 1: {
-
-			System.out.println(" it's " + 366 + " days высокосный.");
-		}
-			break;
+                    a = 2;
+                else
+                    a = 1;
+            }
+        }
+        System.out.print("Year/год: " + year);
+        switch (a) {
+        case 1: {
+        System.out.println(" it's " + 366 + " days высокосный.");
+        }
+        break;
         case 2:
             System.out.println(" it's " + 365 + " days невысокосный/обычный.");
             break;
