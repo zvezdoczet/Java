@@ -30,11 +30,11 @@ public class Task3_6 {
         }
         System.out.print("Year/год: " + year);
         switch (a) {
-        case 1: {
-        System.out.println(" it's " + 366 + " days высокосный.");
-        }
-        break;
-        case 2:
+            case 1: {
+            System.out.println(" it's " + 366 + " days высокосный.");
+            }
+            break;
+            case 2:
             System.out.println(" it's " + 365 + " days невысокосный/обычный.");
             break;
         }
