@@ -8,21 +8,21 @@ package Task3_1;
 import java.util.Scanner;
 
 public class Task3_6 {
-	static int year;
+    static int year;
 
-	public static void main(String[] args) {
-		byte a = 0;
-		System.out.print("¬ведите год: \t");
-		Scanner scn = new Scanner(System.in);
-		year = scn.nextInt();
-		scn.close();
-		if ((year % 100 == 0) & (year % 400 != 0))
-			a = 2;
-		else {
-			if ((year % 100 == 0) & (year % 4 == 0))
-				a = 1;
-			else {
-				if ((year % 100 != 0) & (year % 4 != 0))
+    public static void main(String[] args) {
+        byte a = 0;
+        System.out.print("¬ведите год: \t");
+        Scanner scn = new Scanner(System.in);
+        year = scn.nextInt();
+        scn.close();
+        if ((year % 100 == 0) & (year % 400 != 0))
+            a = 2;
+        else {
+            if ((year % 100 == 0) & (year % 4 == 0))
+                a = 1;
+            else {
+                if ((year % 100 != 0) & (year % 4 != 0))
 					a = 2;
 				else
 					a = 1;
@@ -35,9 +35,9 @@ public class Task3_6 {
 			System.out.println(" it's " + 366 + " days высокосный.");
 		}
 			break;
-		case 2:
-			System.out.println(" it's " + 365 + " days невысокосный/обычный.");
-			break;
-		}
-	}
+        case 2:
+            System.out.println(" it's " + 365 + " days невысокосный/обычный.");
+            break;
+        }
+    }
 }
