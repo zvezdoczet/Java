@@ -15,7 +15,8 @@ public class Task3_8 {
         int y = scn.nextInt();
         scn.close();
         if ((x != 0) & (y != 0)) {
-            if (EvenCzetNeCzet(x) & EvenCzetNeCzet(y)) System.out.println("YES!");
+            if ((EvenCzetNeCzet(x) && EvenCzetNeCzet(y)) || ((!EvenCzetNeCzet(x) && !EvenCzetNeCzet(y))))
+                System.out.println("YES!");
         }
     }
     private static boolean EvenCzetNeCzet(int a) {
